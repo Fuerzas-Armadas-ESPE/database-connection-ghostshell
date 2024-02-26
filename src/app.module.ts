@@ -6,7 +6,7 @@ import { PostsModule } from './posts/posts.module';
 
 @Module({
   imports: [
-    MongooseModule.forRoot('mongodb://root:example@localhost:3000/mydatabase'), 
+    MongooseModule.forRoot('mongodb://root:example@localhost:27017'), 
     MongooseModule.forFeature([
       { name: 'RequestLog', schema: RequestLogSchema },
     ]),
